@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px; }
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white; }
+  .wrapper header {
+    background: white; }
+  .wrapper main {
+    flex: 1 1 auto; }
+
+/*# sourceMappingURL=config.css.map */

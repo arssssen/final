@@ -1,0 +1,131 @@
+.title-bg{
+    background-image: url('../media/img/cub_page_img_overview.svg');
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+.cub_page_body{
+    height: 100%;
+    background-image:url('../media/img/bg-element-cube.svg');
+    background-position-x:-12%;
+    background-repeat:no-repeat;
+    background-position-y:92%;
+
+}
+.cub_page{
+    background-image: url('../media/img/cub_page_bg1.svg'),url('../media/img/cub_page_bg2.svg');
+    background-repeat: no-repeat ,no-repeat;
+    background-position-x: 50%,90%;
+    background-position-y: 61%,80%;
+    color: #111111;
+    ._limit_container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .page_description{
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        padding: 125px 0px 15% ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: 60px;
+            z-index: 1;
+            letter-spacing: 0.02em;
+            color: #3E1BDB;
+        }
+        h2{
+            width: 60%;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.1em;
+            margin-top: 40px;
+
+            color: #111111;
+        }
+    }
+    .cub_brilliant{
+        margin-top: 160px;
+    }
+    .block_m{
+        margin-bottom: 160px;
+        .block_text{
+            .block_text-subheading{
+                font-size: 20px;
+                color: #3E1BDB;
+                font-weight: bold;
+            }
+            color: #111111;
+            h2{
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: 0.3px;
+                padding-bottom: 16px;
+            }
+            .text_underline{
+                border-top: 1px #111111 solid;
+                width: 160px;
+                padding: 0;
+                margin:0  0 83px;
+            }
+            h5{
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.3px; 
+                margin-top: 16px; 
+            }
+        }
+        .block_pos{
+            width: 100%;
+            align-items: center;
+            .block_text{
+                .block_text-subheading{
+                    font-size: 20px;
+                    color: #3E1BDB;
+                    font-weight: bold;
+                }
+                color: #111111;
+                h2{
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0.3px;
+                    padding-bottom: 16px;
+                }
+                .text_underline{
+                    border-top: 1px #111111 solid;
+                    width: 160px;
+                    padding: 0;
+                    margin:0  0 64px;
+                }
+                h5{
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.3px; 
+                    margin-top: 16px; 
+                }
+            }
+            .block_img{
+                text-align: end;
+            }
+        }
+    }
+    .money_add{
+        .block_pos{
+            .block_img{
+                text-align: center;
+            }
+        }
+        
+    }
+    .money_security{
+        .block_pos{
+            .block_img{
+                text-align: center;
+            }
+        }
+    }
+   
+}

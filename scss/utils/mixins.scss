@@ -1,0 +1,111 @@
+@mixin reset-lists {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin reset-button{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@mixin display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@mixin container_div($align-self-desc, $t-align-img, $mb) {
+	margin-bottom: $mb;
+	&__desc {
+		align-self: $align-self-desc;
+	}
+
+	&__img {
+		text-align: $t-align-img;
+	}
+
+	&__title {
+		margin-bottom: 19px;
+	}
+
+	.bt-line {
+		border-top: 1px solid $black;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		margin-top: 83px;
+		span:not(:last-child) {
+			margin-bottom: 24px;
+		}
+		i {
+			color: $blue;
+			padding-right: 10px;
+		}
+	}
+}
+
+@mixin commonFonts {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-style: normal;
+	}
+
+	h1 {
+		font-weight: bold;
+		font-size: 60px;
+		line-height: 60px;
+		letter-spacing: 0.02rem;
+
+		/* Blue */
+		color: $blue;
+	}
+
+	h2 {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 32px;
+		/* or 200% */
+		letter-spacing: 0.1em;
+
+		/* Black */
+		color: $black;
+	}
+
+	h3 {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 36px;
+		letter-spacing: 0.3px;
+
+		/* Blue */
+		color: $blue;
+	}
+
+	h4,
+	h5 {
+		letter-spacing: 0.3px;
+		line-height: 24px;
+		/* Black */
+		color: $black;
+	}
+
+	h4 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	h5 {
+		font-weight: normal;
+		font-size: 16px;
+		color: $black;
+	}
+}

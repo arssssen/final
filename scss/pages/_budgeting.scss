@@ -1,0 +1,138 @@
+@import '../utils/mixins.scss';
+
+$primary-color: #e5e5e5;
+$gray: #888888;
+$black: #111111;
+$blue: #3e1bdb;
+
+$bg-figures: url('../media/img/budget_page/bg_figures.svg');
+$bg-cube: url('../media/img/budget_page/cube.svg');
+$bg-header-img: url('../media/img/budget_page/headers_img.svg');
+
+.bt-line {
+	width: 10rem;
+}
+
+
+.headers {
+	margin-bottom: 161px;
+	text-align: center;
+	margin: 0 auto;
+
+	&__container {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+	&__main-title {
+		margin: 0 91px 37px;
+	}
+	&__sub-title {
+		margin: 0 286px;
+	}
+
+	&__img {
+		#budget_img {
+			max-width: 100%;
+			top: -130px;
+			position: relative;
+		}
+	}
+}
+
+._limit_container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.sub-navigation {
+	margin-bottom: 124px;
+	margin-top: 24px;
+	&__container {
+		margin-bottom: 16px;
+	}
+
+	&__item {
+		margin-top: 24px;
+		a {
+			text-decoration: none;
+			color: $gray;
+		}
+		svg {
+			margin-top: -1px;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+
+		&:last-child a {
+			color: $black;
+		}
+	}
+
+	.bt-line {
+		border-top: 1px solid $gray;
+	}
+}
+
+.intro-text {
+	width: 50%;
+	margin: 0 auto 61px;
+	text-align: center;
+}
+
+
+.budgeting-page {
+	background-image: $bg-figures, $bg-figures, $bg-cube;
+	background-repeat: no-repeat;
+	background-position-x: 4%, 18%, 14%;
+	background-position-y: 43%, 73%, 105.5%;
+
+	@include commonFonts;
+
+
+	.analytics {
+		@include container_div(center, end, 176px);
+	}
+
+	.charts {
+		@include container_div(center, start, 163px);
+	}
+
+	.notifications {
+		&__desc {
+			padding-bottom: 130px;
+		}
+
+		&__img {
+			align-self: flex-end;
+		}
+
+		@include container_div(unset,center, 162px);
+	}
+
+	// .conclusion {
+	// 	margin-bottom: 500px;
+	// 	&__left {
+	// 		align-self: center;
+	// 		h4 {
+	// 			color: $black;
+	// 			margin-bottom: 24px;
+	// 		}
+
+	// 		.bt-line {
+	// 			border-top: 2px solid $black;
+	// 			margin-bottom: 82px;
+	// 		}
+	// 	}
+
+	// 	&__right {
+	// 		h4 {
+	// 			color: $blue;
+	// 			margin-bottom: 22px;
+	// 		}
+
+	// 		h5:not(:last-child) {
+	// 			margin-bottom: 42px;
+	// 		}
+	// 	}
+	// }
+}

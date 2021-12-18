@@ -1,0 +1,73 @@
+.title-bg {
+  background-image: url("../media/img/account_page_desctiption_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position-x: center;
+  background-position-y: bottom; }
+
+.account_page_body {
+  height: 100%;
+  background-image: url("../media/img/bg-element-cube.svg");
+  background-position-x: 25%;
+  background-repeat: no-repeat;
+  background-position-y: 98%; }
+
+.account_page {
+  background-image: url("../media/img/bg-element.svg");
+  background-repeat: no-repeat;
+  background-position-x: 7%;
+  background-position-y: 75%;
+  color: #111111; }
+  .account_page ._limit_container {
+    width: 90%;
+    margin: 0 auto; }
+  .account_page .page_description {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 125px 0px 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .account_page .page_description h1 {
+      font-size: 60px;
+      z-index: 1;
+      letter-spacing: 0.02em;
+      color: #3E1BDB; }
+    .account_page .page_description h2 {
+      width: 60%;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0.1em;
+      margin-top: 40px;
+      color: #111111; }
+  .account_page .block_m {
+    margin-bottom: 160px; }
+    .account_page .block_m .block_pos {
+      width: 100%;
+      align-items: center; }
+      .account_page .block_m .block_pos .block_text {
+        color: #111111; }
+        .account_page .block_m .block_pos .block_text h2 {
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: 0.3px;
+          padding-bottom: 16px; }
+        .account_page .block_m .block_pos .block_text .text_underline {
+          border-top: 1px #111111 solid;
+          width: 160px;
+          padding: 0;
+          margin: 0  0 64px; }
+        .account_page .block_m .block_pos .block_text h5 {
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.3px;
+          margin-top: 16px; }
+      .account_page .block_m .block_pos .block_img {
+        text-align: end; }
+  .account_page .money_add .block_pos .block_img {
+    text-align: center; }
+  .account_page .money_security .block_pos .block_img {
+    text-align: center; }
+
+/*# sourceMappingURL=account_page.css.map */

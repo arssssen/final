@@ -1,0 +1,19 @@
+@import '../utils/mixins';
+@import '../pages/stocks';
+
+.snl_bonus-page {
+	@include commonFonts;
+
+	.headers {
+		margin-bottom: 288px;
+		max-width: 1200px;
+		&__main-title {
+			padding: 0 100px;
+		}
+	}
+
+	.intro-text {
+		margin: 0 auto;
+	}
+}
+

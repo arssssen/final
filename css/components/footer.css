@@ -1,0 +1,175 @@
+footer {
+  width: 100%;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 3% 0;
+  background-color: #010221;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 0px; }
+  footer ._limit_container, footer .copyright {
+    border: 1px sorgb(216, 0, 0) lack;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    footer ._limit_container .contact, footer .copyright .contact {
+      width: 30%;
+      display: flex;
+      flex-direction: column; }
+      footer ._limit_container .contact form, footer .copyright .contact form {
+        display: flex;
+        flex-direction: column; }
+        footer ._limit_container .contact form label, footer .copyright .contact form label {
+          letter-spacing: 0.1em;
+          font-size: 18px;
+          margin-top: 12%; }
+        footer ._limit_container .contact form .email-send, footer .copyright .contact form .email-send {
+          display: flex;
+          flex-direction: row;
+          margin-top: 4%;
+          width: 100%; }
+          footer ._limit_container .contact form .email-send input, footer .copyright .contact form .email-send input {
+            width: 70%;
+            height: 50px;
+            border: 0;
+            padding: 4% 4% 4% 8%;
+            border-radius: 8px;
+            background-color: #262741;
+            transition: 0.2s ease-out;
+            outline: none;
+            letter-spacing: 0.1em;
+            color: #FFFFFF; }
+            footer ._limit_container .contact form .email-send input:focus, footer .copyright .contact form .email-send input:focus {
+              background-color: white;
+              color: #000000; }
+          footer ._limit_container .contact form .email-send button, footer .copyright .contact form .email-send button {
+            height: 50px;
+            background-color: #3E1BDB;
+            color: #FFFFFF;
+            width: 30%;
+            margin-left: 3%;
+            padding: 4%;
+            border: 0;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.1em;
+            outline: none;
+            transition: 0.1s ease-in; }
+            footer ._limit_container .contact form .email-send button:hover, footer .copyright .contact form .email-send button:hover {
+              background: #3e1bdb9f; }
+        footer ._limit_container .contact form .phone_email, footer .copyright .contact form .phone_email {
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column; }
+          footer ._limit_container .contact form .phone_email span, footer .copyright .contact form .phone_email span {
+            display: table-cell;
+            font-size: 16px;
+            padding-top: 5%; }
+          footer ._limit_container .contact form .phone_email i, footer .copyright .contact form .phone_email i {
+            vertical-align: middle;
+            padding: 0 5%;
+            font-size: 20px; }
+      footer ._limit_container .contact .footer-logo, footer .copyright .contact .footer-logo {
+        text-align: start; }
+        footer ._limit_container .contact .footer-logo img, footer .copyright .contact .footer-logo img {
+          width: 50%; }
+    footer ._limit_container .footer-list, footer .copyright .footer-list {
+      display: flex;
+      width: 70%;
+      flex-direction: row; }
+      footer ._limit_container .footer-list ul, footer .copyright .footer-list ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        footer ._limit_container .footer-list ul li, footer .copyright .footer-list ul li {
+          letter-spacing: 0.1em;
+          list-style-type: none;
+          font-size: 14px;
+          color: #CDCDCD;
+          width: 100%;
+          padding-bottom: 2%; }
+          footer ._limit_container .footer-list ul li:first-child, footer .copyright .footer-list ul li:first-child {
+            letter-spacing: 0.1em;
+            font-size: 16px;
+            color: #FFFFFF; }
+  footer .copyright {
+    width: 90%;
+    border-top: 1px solid #1D1F4D;
+    margin-top: 2%;
+    color: #60637C;
+    flex-direction: row;
+    padding-top: 2%;
+    font-size: 16px; }
+    footer .copyright span:first-child {
+      width: 40%; }
+    footer .copyright span:last-child {
+      width: 40%; }
+
+@media screen and (max-width: 1000px) {
+  footer ._limit_container, footer .copyright {
+    flex-direction: column;
+    justify-content: center; }
+    footer ._limit_container .contact, footer .copyright .contact {
+      width: 100%;
+      text-align: center; }
+      footer ._limit_container .contact form label, footer .copyright .contact form label {
+        font-size: 22px;
+        margin-top: 6%; }
+      footer ._limit_container .contact form .email-send, footer .copyright .contact form .email-send {
+        flex-direction: column;
+        align-self: center;
+        width: 40%; }
+        footer ._limit_container .contact form .email-send input, footer .copyright .contact form .email-send input {
+          width: 100%;
+          font-size: 20px;
+          padding-left: 4%;
+          text-align: center; }
+        footer ._limit_container .contact form .email-send button, footer .copyright .contact form .email-send button {
+          margin-top: 3%;
+          text-align: center;
+          width: 100%;
+          margin-left: 0;
+          font-size: 20px; }
+      footer ._limit_container .contact form .phone_email, footer .copyright .contact form .phone_email {
+        margin-top: 1%; }
+        footer ._limit_container .contact form .phone_email i, footer .copyright .contact form .phone_email i {
+          padding: 0 1%;
+          font-size: 25px; }
+        footer ._limit_container .contact form .phone_email span, footer .copyright .contact form .phone_email span {
+          font-size: 20px; }
+      footer ._limit_container .contact .footer-logo, footer .copyright .contact .footer-logo {
+        display: flex;
+        justify-content: center; }
+        footer ._limit_container .contact .footer-logo img, footer .copyright .contact .footer-logo img {
+          width: 35%; }
+    footer ._limit_container .footer-list, footer .copyright .footer-list {
+      width: fit-content;
+      margin-top: 5%;
+      flex-direction: column;
+      align-items: center; }
+      footer ._limit_container .footer-list ul li, footer .copyright .footer-list ul li {
+        font-size: 20px; }
+        footer ._limit_container .footer-list ul li:first-child, footer .copyright .footer-list ul li:first-child {
+          font-size: 22px; }
+
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .copyright:first-child {
+      width: 100%; }
+    .copyright:last-child {
+      width: 100%; } }
+@media screen and (max-width: 768px) {
+  footer ._limit_container .contact form .email-send, footer .copyright .contact form .email-send {
+    width: 50%; } }
+
+/*# sourceMappingURL=footer.css.map */

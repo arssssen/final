@@ -1,0 +1,268 @@
+.container {
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-template-areas: "title" "payments" "cards" "online" "costs" "integrations" "safe";
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  background-image: url("../../media/img/multi_currency_page/cube.svg");
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position-y: 105%; }
+
+.title {
+  grid-area: title;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 25vh 0 35vh;
+  background-image: url("../../media/img/main_page/title-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 80%; }
+  .title h1 {
+    color: #3E1BDB;
+    font-size: 60px; }
+  .title h2 {
+    width: 40%;
+    margin-top: 40px;
+    font-size: 16px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.1em; }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%; }
+  .text h4 {
+    font-size: 24px;
+    padding-bottom: 16px; }
+  .text .underline {
+    border-top: black 2px solid;
+    width: 160px;
+    margin-bottom: 53px; }
+  .text h5 {
+    margin-top: 27px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.3px; }
+    .text h5 i {
+      color: #3E1BDB; }
+  .text .learn-more {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-top: 25px; }
+
+.image {
+  height: 100%;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center; }
+  .image img {
+    width: 100%; }
+
+.payments {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "payments-t payments-i";
+  grid-area: payments; }
+
+.payments-t {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: payments-t; }
+  .payments-t .text {
+    width: 60%; }
+
+.payments-i {
+  grid-area: payments-i; }
+
+.cards {
+  margin-bottom: 160px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "cards-i cards-t";
+  grid-area: cards; }
+
+.cards-t {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: cards-t; }
+
+.cards-i {
+  grid-area: cards-i; }
+
+.online {
+  margin-bottom: 160px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "online-t online-i";
+  grid-area: online; }
+
+.online-t {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: online-t; }
+
+.online-i {
+  grid-area: online-i; }
+  .online-i .image {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+    .online-i .image img {
+      width: 100%; }
+
+.costs {
+  margin-bottom: 160px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "costs-i costs-t";
+  grid-area: costs; }
+
+.costs-t {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: costs-t; }
+
+.costs-i {
+  grid-area: costs-i; }
+
+.integrations {
+  margin-bottom: 160px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "integrations-t integrations-i";
+  grid-area: integrations; }
+
+.integrations-t {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: integrations-t; }
+
+.integrations-i {
+  grid-area: integrations-i; }
+
+.safe {
+  margin-bottom: 160px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "safe-i safe-t";
+  grid-area: safe; }
+
+.safe-t {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: safe-t; }
+
+.safe-i {
+  grid-area: safe-i; }
+
+.svg-image svg g {
+  width: 20%; }
+
+.d {
+  animation: rotation 1.5s infinite alternate;
+  transform-origin: center; }
+
+@keyframes rotation {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(20px); } }
+.try {
+  margin-bottom: 160px;
+  grid-area: try; }
+  .try div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center; }
+    .try div h1 {
+      color: #3E1BDB;
+      font-size: 60px; }
+    .try div h2 {
+      margin: 40px 0 94px;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.1em; }
+    .try div .accounts__image {
+      width: 30%; }
+      .try div .accounts__image img {
+        width: 100%; }
+    .try div a {
+      padding: 26px 22px;
+      background-color: #3E1BDB;
+      color: white;
+      border-radius: 8px;
+      margin: 40px 0 31px; }
+
+@media only screen and (max-width: 1200px) {
+  .image {
+    margin-bottom: 50px; }
+
+  .flex {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  .flex-r {
+    display: flex;
+    flex-direction: column; } }
+
+/*# sourceMappingURL=business_main.css.map */

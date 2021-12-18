@@ -1,0 +1,77 @@
+.container_header {
+  height: 58px;
+  background: #111111;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .container_header span {
+    font-size: 16px;
+    margin: 0 45px; }
+    .container_header span:nth-child(1) a {
+      text-decoration: none;
+      color: white; }
+    .container_header span:nth-child(2) a {
+      text-decoration: underline;
+      color: white; }
+
+.container_navigation {
+  display: flex;
+  padding: 15px 0;
+  box-sizing: border-box; }
+  .container_navigation .navigation_limit_container {
+    width: 90%;
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .container_navigation .navigation_logo img {
+    margin: 10px 80px 10px 0;
+    width: 120px;
+    height: 80px; }
+  .container_navigation .navigation_menu {
+    margin: 10px 0px; }
+    .container_navigation .navigation_menu ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 500px;
+      width: 100%; }
+      .container_navigation .navigation_menu ul li a {
+        text-decoration: none;
+        color: black;
+        letter-spacing: 0.1em;
+        font-style: normal;
+        font-weight: 500; }
+  .container_navigation .navigation_login {
+    margin: 10px 0;
+    font-size: 16px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .container_navigation .navigation_login a {
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.1em;
+      font-style: normal; }
+    .container_navigation .navigation_login button {
+      border: none;
+      cursor: pointer;
+      width: 167px;
+      height: 60px;
+      background: #3E1BDB;
+      color: white;
+      border-radius: 8px; }
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,177 @@
+@import '../pages/budgeting';
+@import '../utils/mixins.scss';
+
+
+$bg-triangle: url('../media/img/stocks_page/triangle3.svg');
+
+.bt-desc {
+	margin-bottom: 80px;
+	&__text {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0.3px;
+
+		color: $gray;
+	}
+}
+
+.stocks-page {
+	background-image: $bg-triangle, $bg-figures;
+	background-repeat: no-repeat;
+	background-position-x: 79%, 28.5%;
+	background-position-y: 51%, 93.5%;
+
+	@include commonFonts;
+
+	.headers {
+		position: relative;
+
+		&__container {
+			margin-bottom: 257px;
+		}
+
+		.stock-tokens {
+			img {
+				position: absolute;
+
+				&:first-child {
+					left: 0;
+					top: -13%;
+				}
+				&:nth-child(2) {
+					left: 7%;
+					top: 55%;
+				}
+				&:nth-child(3) {
+					left: 24%;
+					top: 110%;
+				}
+				&:nth-child(4) {
+					right: 0;
+					top: -13%;
+				}
+				&:nth-child(5) {
+					right: 7%;
+					top: 55%;
+				}
+				&:nth-child(6) {
+					right: 24%;
+					top: 110%;
+				}
+			}
+		}
+	}
+
+	.intro__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 30px;
+		/* identical to box height */
+
+		letter-spacing: 0.3px;
+		
+		color: $black;
+
+		margin-bottom: 80px;
+	}
+
+	.commision-free {
+		margin-bottom: 160px;
+		&__desc {
+			h4 {
+				color: $blue;
+				font-size: 24px;
+				margin-bottom: 16px;
+			}
+			.bt-line {
+				border-top: 2px solid $black;
+				margin-bottom: 40px;
+				width: 20rem;
+			}
+
+			.buy_and_sell {
+				margin-bottom: 24.4px;
+			}
+
+			ul {
+				li {
+					list-style-type: none;
+					position: relative; /* It's needed for setting position to absolute in the next rule. */
+					margin-bottom: 24px;
+				}
+
+				li::before {
+					content: '•';
+					position: absolute;
+					left: -0.8em; /* Adjust this value so that it appears where you want. */
+					font-size: .9em; /* Adjust this value so that it appears what size you want. */
+				}
+			}
+			a {
+				font-family: "DM Sans";
+				font-size: 24px;
+				line-height: 117%;
+				/* or 28px */
+
+				letter-spacing: -0.03em;
+
+				/* Black */
+
+				color: $black;
+				margin-right: 60px;
+				i {
+					font-size: 2rem;
+					margin-left: 8px;
+				}
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+
+		&__img {
+			align-self: center;
+			display: flex;
+
+			.cross-img {
+				align-self: end;
+				img {
+					padding-bottom: 30px;
+				}
+			}
+			.profile-img {
+				flex: 1;
+				text-align: center;
+			}
+		}
+	}
+
+	.global-comp {
+		@include container_div(center, center, 160px);
+		&__title {
+			color: $blue;
+		}
+		.bt-line {
+			width: 20rem;
+
+			border-top: 2px solid $black;
+		}
+	}
+
+	.zoom {
+		@include container_div(center, center, 80px);
+
+		&__title {
+			color: $blue;
+		}
+
+		.bt-line {
+			width: 20rem;
+			border-top: 2px solid $black;
+		}
+	}
+
+	
+}
