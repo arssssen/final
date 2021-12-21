@@ -24,6 +24,17 @@ header {
 	margin: 10px;
 }
 
+.map {
+	position: relative;
+	overflow: hidden;
+}
+
+.map-container {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
 .form-container {
 	display: grid;
 	justify-content: center;
@@ -293,47 +304,47 @@ label.validation-error {
 
 @-webkit-keyframes rotate {
 	from {
-	  -webkit-transform: rotate(0);
-			  transform: rotate(0);
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
 	}
 	to {
-	  -webkit-transform: rotate(360deg);
-			  transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
 	from {
-	  -webkit-transform: rotate(0);
-			  transform: rotate(0);
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
 	}
 	to {
-	  -webkit-transform: rotate(360deg);
-			  transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
-  
-  @-webkit-keyframes rotate_img {
+}
+
+@-webkit-keyframes rotate_img {
 	from {
-	  -webkit-transform: rotate(0);
-			  transform: rotate(0);
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
 	}
 	to {
-	  -webkit-transform: rotate(-360deg);
-			  transform: rotate(-360deg);
+		-webkit-transform: rotate(-360deg);
+		transform: rotate(-360deg);
 	}
-  }
-  
-  @keyframes rotate_img {
+}
+
+@keyframes rotate_img {
 	from {
-	  -webkit-transform: rotate(0);
-			  transform: rotate(0);
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
 	}
 	to {
-	  -webkit-transform: rotate(-360deg);
-			  transform: rotate(-360deg);
+		-webkit-transform: rotate(-360deg);
+		transform: rotate(-360deg);
 	}
-  }
+}
 
 @media screen and (max-width: 500px) {
 	.form-container,
@@ -341,4 +352,3 @@ label.validation-error {
 		margin: 10px;
 	}
 }
-

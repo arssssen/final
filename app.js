@@ -36,6 +36,7 @@ $(document).on('DOMContentLoaded', function () {
             $loginForm.toggleClass('form--hidden')
             Store.checkAdmin(username_email)
             $('.animated-snl').toggleClass('hide')
+            $('.map-container').removeClass('hide')
         }
 
 
