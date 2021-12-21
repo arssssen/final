@@ -2,6 +2,19 @@ $(document).on('DOMContentLoaded', function () {
     const $loginForm = $('#login');
     const $registrationForm = $('#registration');
 
+    var bouncingBall = anime({
+        targets: '.ball',
+        translateY: '50vh',
+        duration: 300,
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInCubic',
+        scaleX: {
+            value: 1.05,
+            duration: 150,
+            delay: 268
+        }
+    });
 
     UI.linkToLogin($loginForm, $registrationForm);
 
@@ -37,6 +50,7 @@ $(document).on('DOMContentLoaded', function () {
             Store.checkAdmin(username_email)
             $('.animated-snl').toggleClass('hide')
             $('.map-container').removeClass('hide')
+            $('.ball').removeClass('hide')
         }
 
 
